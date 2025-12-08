@@ -28,6 +28,12 @@ app.get('/api/routes', (req, res) => {
     });
   });
 
+  
+app.get('/', (req, res) => {
+    res.send('Welcome to my REST API! Use /api/items to access the items.');
+});
+
+
 // Connect to MongoDB
 mongoose
   .connect(process.env.MONGO_URI)
