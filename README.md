@@ -50,7 +50,8 @@ Open http://localhost:3000/api/items in your browser, Postman, curl etc.
 
 ---
 
-Tech stack
+## Tech stack
+
 * Node.js
 
 * Express
@@ -62,3 +63,5 @@ Tech stack
 * dotenv
 
 * cors
+
+---
