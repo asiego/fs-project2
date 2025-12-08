@@ -32,21 +32,23 @@ Optional:
 git clone <your-repo-url>
 cd <repo-folder>
 
-2. **Install dependencies**
+2. Install dependencies
 
 npm install
 
-3. **Create a .env file in project root with MongoDB connection string:
+3. Create a .env file in project root with MongoDB connection string:
 
 MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<your-db-name>
 
-4. **Start the server**
+4. Start the server
 
 npm start
 
-5. **Test the API**
+5. Test the API
 
 Open http://localhost:3000/api/items in your browser, Postman, curl etc.
+
+---
 
 ## Tech stack
 * Node.js
