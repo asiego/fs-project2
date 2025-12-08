@@ -16,6 +16,7 @@ console.log("MongoDB URI:", process.env.MONGO_URI);
 const itemRoutes = require('./routes/items');
 app.use('/api/items', itemRoutes);
 
+// API routes
 app.get('/api/routes', (req, res) => {
     res.json({
       routes: [
@@ -28,10 +29,74 @@ app.get('/api/routes', (req, res) => {
     });
   });
 
-  
+// landing page
 app.get('/', (req, res) => {
-    res.send('Welcome to my REST API! Use /api/items to access the items.');
-});
+    res.send(`
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <title>REST API</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+          }
+          header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+          }
+          main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+          }
+          h1 {
+            margin-top: 0;
+          }
+          code {
+            background: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+          }
+          a {
+            color: #4CAF50;
+            text-decoration: none;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        </style>
+      </head>
+      <body>
+        <header>
+          <h1>Project 2 REST API</h1>
+        </header>
+        <main>
+          <p>Welcome! This is a simple REST API. Below are the available endpoints:</p>
+          <ul>
+            <li><code>GET /api/items</code> – Get all items</li>
+            <li><code>GET /api/items/:id</code> – Get a single item by ID</li>
+            <li><code>POST /api/items</code> – Add a new item (JSON body required)</li>
+            <li><code>PUT /api/items/:id</code> – Update an existing item (JSON body required)</li>
+            <li><code>DELETE /api/items/:id</code> – Delete an item by ID</li>
+          </ul>
+          <p>You can also see the <a href="/api/routes">list of routes</a>.</p>
+          <p>Test the API using <a href="https://www.postman.com/downloads/">Postman</a> or your preferred HTTP client.</p>
+        </main>
+      </body>
+      </html>
+    `);
+  });
 
 
 // Connect to MongoDB
