@@ -2,6 +2,8 @@
 
 A simple REST API, built with **Node.js**, **Express**, and **MongoDB**.  
 This API allows you to create, read, update, and delete items.
+API is deployed at https://fs-project2-v33l.onrender.com
+
 
 ---
 
