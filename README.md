@@ -2,7 +2,7 @@
 
 A simple REST API, built with **Node.js**, **Express**, and **MongoDB**.  
 This API allows you to create, read, update, and delete items.
-API is deployed at https://fs-project2-v33l.onrender.com
+API is deployed at https://fs-project3-ymeb.onrender.com/
 
 
 ---
@@ -11,11 +11,11 @@ API is deployed at https://fs-project2-v33l.onrender.com
 
 | Method | Endpoint              | Description                 |
 |--------|----------------------|-----------------------------|
-| GET    | `/api/items`          | Get all items               |
-| GET    | `/api/items/:id`      | Get a single item by ID     |
-| POST   | `/api/items`          | Create a new item           |
-| PUT    | `/api/items/:id`      | Update an existing item     |
-| DELETE | `/api/items/:id`      | Delete an item              |
+| GET    | `/api/snippets`          | Get all items               |
+| GET    | `/api/snippets/:id`      | Get a single item by ID     |
+| POST   | `/api/snippets`          | Create a new item           |
+| PUT    | `/api/snippets/:id`      | Update an existing item     |
+| DELETE | `/api/snippets/:id`      | Delete an item              |
 
 Optional:
 
