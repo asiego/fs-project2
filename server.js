@@ -84,13 +84,13 @@ app.get('/', (req, res) => {
         <main>
           <p>Welcome! This is a simple REST API. Below are the available endpoints:</p>
           <ul>
-            <li><code>GET /api/items</code> – Get all items</li>
-            <li><code>GET /api/items/:id</code> – Get a single item by ID</li>
-            <li><code>POST /api/items</code> – Add a new item (JSON body required)</li>
-            <li><code>PUT /api/items/:id</code> – Update an existing item (JSON body required)</li>
-            <li><code>DELETE /api/items/:id</code> – Delete an item by ID</li>
+            <li><code>GET /api/snippets</code> – Get all items</li>
+            <li><code>GET /api/snippets/:id</code> – Get a single item by ID</li>
+            <li><code>POST /api/snippets</code> – Add a new item (JSON body required)</li>
+            <li><code>PUT /api/snippets/:id</code> – Update an existing item (JSON body required)</li>
+            <li><code>DELETE /api/snippets/:id</code> – Delete an item by ID</li>
           </ul>
-          <p>You can also see the <a href="/api/routes">list of routes</a>.</p>
+          <p>You can also see the <a href="/api/snippets">list of routes</a>.</p>
           <p>Test the API using <a href="https://www.postman.com/downloads/">Postman</a> or your preferred HTTP client.</p>
         </main>
       </body>
